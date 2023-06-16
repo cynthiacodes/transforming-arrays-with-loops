@@ -10,7 +10,22 @@
 		// insert LOWERCASE_DOMAIN at the end of CLEANED_DOMAINS
 // return CLEANED_DOMAINS
 
+/**
+ * 
+ * Return a formatted version of an array of domain names, all in lower case.
+ * @parameter {string[]} domainNames - mixed-case string array of domain names, e.g. `["academy.tech", "GITHUB.COM", "StackOverflow.com", "mOzIlLa.OrG"]`
+ * @returns {string[]} lowercase version of domainNames, e.g. `["academy.tech", "github.com", "stackoverflow.com", "mozilla.org"]`
+ */
+function lowercaseDomains(domainNames) {
+	const cleanedDomains = [];
 
+	for (let domain in domainNames) {
+		const lowercaseDomain = domain.toLowerCase();
+		cleanedDomains.push(lowercaseDomain);
+	}
+
+	return cleanedDomains;
+}
 
 
 // test cases
