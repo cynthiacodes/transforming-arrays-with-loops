@@ -20,7 +20,7 @@ function lowercaseDomains(domainNames) {
 	const cleanedDomains = [];
 
 	for (let domain in domainNames) {
-		const lowercaseDomain = domain.toLowerCase();
+		const lowercaseDomain = domainNames[domain].toLowerCase();
 		cleanedDomains.push(lowercaseDomain);
 	}
 
