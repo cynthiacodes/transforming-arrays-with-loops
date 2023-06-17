@@ -1,15 +1,9 @@
-function (){
-
+function sayHello(name) {
+    return `Hello ${name}!`;
 }
 
-function greeting(nameArray){
-
-    let message = [];
-
-    for(let nameIndex in nameArray){
-        message.push(`Hello ${nameArray[nameIndex]}!`);
-        
-    }
+function greeting(nameArray) {
+    let message = nameArray.map(sayHello)
     return message;
 
 }
