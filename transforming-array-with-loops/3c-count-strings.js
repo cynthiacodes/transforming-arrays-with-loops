@@ -1,16 +1,9 @@
+function getLength(word){
+    return word.length;
+}
+
 function countStrings(inputArray) {
-
-    let result = [];
-
-    for (let eachString of inputArray) {
-
-        const getLength = eachString.length;
-
-        result.push(getLength);
-
-    }
-
-    return result;
+    return inputArray.map(getLength);
 }
 
 // Test cases
