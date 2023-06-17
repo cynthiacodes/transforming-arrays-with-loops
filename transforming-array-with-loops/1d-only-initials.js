@@ -4,12 +4,9 @@ function onlyInitials(namesArray) {
 
     for (let eachName of namesArray) {
 
+        const firstLastName = eachName.split(" ");
 
-        const firstName = eachName[0];
-
-        const lastName = eachName[1];
-
-        const getInitials = `${firstName[0].toUpperCase()}.${lastName[0].toUpperCase()}.`;
+        const getInitials = `${firstLastName[0][0].toUpperCase()}.${firstLastName[1][0].toUpperCase()}.`;
 
         result.push(getInitials);
 
