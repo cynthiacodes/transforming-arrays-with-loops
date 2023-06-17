@@ -1,5 +1,20 @@
-function onlyInitials(namesArray){
-    return 0;
+function onlyInitials(namesArray) {
+
+    for (let eachName of namesArray) {
+
+        let result = [];
+
+        const firstName = eachName[0];
+
+        const lastName = eachName[1];
+
+        const getInitials = `${firstName[0].upperCase()}.${lastName[0].upperCase()}.`;
+
+        result.push(getInitials);
+
+    }
+
+    return result;
 }
 
 // Test cases
