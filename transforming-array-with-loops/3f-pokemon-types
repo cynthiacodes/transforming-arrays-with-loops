@@ -1,0 +1,22 @@
+function pokemonTypes(inputObjectArrays) {
+
+    let result = [];
+
+    for (let object of inputObjectArrays){
+
+        const name = object.name;
+        const type = (object.type).toLowerCase();
+        const sentence = `${name} is a ${type} type Pokémon.`
+
+        result.push(sentence);
+
+    }
+
+    return result;
+}
+
+// test cases
+
+console.log(pokemonTypes([{ name: 'Bulbasaur', type: 'Grass' }, { name: 'Charmander', type: 'Fire' }, { name: 'Squirtle', type: 'Water' }]),
+    "output should be",
+    ["Bulbasaur is a grass type Pokémon.", "Charmander is a fire type Pokémon.", "Squirtle is a water type Pokémon."]);
