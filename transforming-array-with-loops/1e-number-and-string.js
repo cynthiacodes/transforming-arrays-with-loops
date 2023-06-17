@@ -2,11 +2,11 @@ function getNumberStringObjectArray(numberArray) {
 
     let result = [];
 
-    for (let numberIndex of numberArray){
+    for (let number of numberArray){
         const convertedObject = {};
 
-        convertedObject.asNumber = numberArray[numberIndex];
-        convertedObject.asString = numberArray[numberIndex].toString();
+        convertedObject.asNumber = number;
+        convertedObject.asString = number.toString();
 
         result.push(convertedObject);
 
