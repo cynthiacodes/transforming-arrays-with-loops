@@ -1,5 +1,16 @@
-function countStrings(inputArray){
- return 0;
+function countStrings(inputArray) {
+    
+    let result = [];
+
+    for (let index of inputArray) {
+     
+        const getLength = inputArray[index].length();
+     
+        result.push(getLength);
+
+    }
+
+    return result;
 }
 
 // Test cases
