@@ -1,11 +1,11 @@
-function getfirstLastNameInitials(nameString){
+function getFirstLastNameInitials(nameString){
     const nameSplit = nameString.split(" ");
     return `${nameSplit[0][0]}.${nameSplit[1][0]}.`
 
 }
 
 function onlyInitials(namesArray) {
-    return namesArray.map(getfirstLastNameInitials);
+    return namesArray.map(getFirstLastNameInitials);
 }
 
 // Test cases
