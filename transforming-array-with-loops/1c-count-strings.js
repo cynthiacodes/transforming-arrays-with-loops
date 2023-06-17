@@ -4,7 +4,7 @@ function countStrings(inputArray) {
 
     for (let index of inputArray) {
      
-        const getLength = inputArray[index].length();
+        const getLength = inputArray[index].length;
      
         result.push(getLength);
 
