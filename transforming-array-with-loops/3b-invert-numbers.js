@@ -1,20 +1,10 @@
-function getConvertedNumber(number){
+function getConvertedNumber(number) {
     return number * -1;
 }
 
 
 function invertNumbers(numbersArray) {
-
-    result = [];
-    
-    for (let numberIndex in numbersArray) {
-
-        const convertedNumber = numbersArray[numberIndex] * -1;
-
-        result.push(convertedNumber);
-    }
-
-    return result
+    return numbersArray.map(getConvertedNumber);
 }
 
 
