@@ -1,3 +1,9 @@
+function getfirstLastNameInitials(nameString){
+    const nameSplit = nameString.split(" ");
+    return `${nameSplit[0][0]}.${nameSplit[1][0]}`
+
+}
+
 function onlyInitials(namesArray) {
     
     let result = [];
