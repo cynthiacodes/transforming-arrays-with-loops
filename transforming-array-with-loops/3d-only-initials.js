@@ -5,20 +5,7 @@ function getfirstLastNameInitials(nameString){
 }
 
 function onlyInitials(namesArray) {
-    
-    let result = [];
-
-    for (let eachName of namesArray) {
-
-        const firstLastName = eachName.split(" ");
-
-        const getInitials = `${firstLastName[0][0].toUpperCase()}.${firstLastName[1][0].toUpperCase()}.`;
-
-        result.push(getInitials);
-
-    }
-
-    return result;
+    return namesArray.map(getfirstLastNameInitials);
 }
 
 // Test cases
