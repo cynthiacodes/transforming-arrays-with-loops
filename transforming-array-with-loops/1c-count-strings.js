@@ -1,11 +1,11 @@
 function countStrings(inputArray) {
-    
+
     let result = [];
 
-    for (let index of inputArray) {
-     
-        const getLength = inputArray[index].length;
-     
+    for (let eachString of inputArray) {
+
+        const getLength = eachString.length;
+
         result.push(getLength);
 
     }
