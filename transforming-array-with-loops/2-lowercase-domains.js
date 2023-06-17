@@ -6,8 +6,8 @@
 // set CLEANED_DOMAINS to an empty array
 
 // for each DOMAIN in DOMAIN_NAMES
-		// set LOWERCASE_DOMAIN to lowercase(DOMAIN)
-		// insert LOWERCASE_DOMAIN at the end of CLEANED_DOMAINS
+// set LOWERCASE_DOMAIN to lowercase(DOMAIN)
+// insert LOWERCASE_DOMAIN at the end of CLEANED_DOMAINS
 // return CLEANED_DOMAINS
 
 /**
@@ -16,15 +16,14 @@
  * @parameter {string[]} domainNames - mixed-case string array of domain names, e.g. `["academy.tech", "GITHUB.COM", "StackOverflow.com", "mOzIlLa.OrG"]`
  * @returns {string[]} lowercase version of domainNames, e.g. `["academy.tech", "github.com", "stackoverflow.com", "mozilla.org"]`
  */
+
 function lowercaseDomains(domainNames) {
-	const cleanedDomains = [];
-
-	for (let domain of domainNames) {
-		const lowercaseDomain = domain.toLowerCase();
-		cleanedDomains.push(lowercaseDomain);
-	}
-
+	const cleanedDomains = domainNames.map(inLowerCase);
 	return cleanedDomains;
+}
+
+function inLowerCase(domainName) {
+	return domainName.toLowerCase();
 }
 
 
