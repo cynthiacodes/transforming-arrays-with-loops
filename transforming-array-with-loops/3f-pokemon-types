@@ -1,18 +1,14 @@
+function getPokemonNameType(object) {
+    const name = object.name;
+    const type = (object.type).toLowerCase();
+    const sentence = `${name} is a ${type} type Pokémon.`
+    return sentence;
+}
+
+
+
 function pokemonTypes(inputObjectArrays) {
-
-    let result = [];
-
-    for (let object of inputObjectArrays){
-
-        const name = object.name;
-        const type = (object.type).toLowerCase();
-        const sentence = `${name} is a ${type} type Pokémon.`
-
-        result.push(sentence);
-
-    }
-
-    return result;
+    return inputObjectArrays.map(getPokemonNameType);
 }
 
 // test cases
