@@ -1,3 +1,7 @@
+function getConvertedNumber(number){
+    return number * -1;
+}
+
 
 function invertNumbers(numbersArray) {
 
