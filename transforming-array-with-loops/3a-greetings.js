@@ -1,6 +1,8 @@
+function (){
 
+}
 
-function greating(nameArray){
+function greeting(nameArray){
 
     let message = [];
 
@@ -14,4 +16,4 @@ function greating(nameArray){
 
 // Test cases
 
-console.log(greating(["Ash", "Beth", "Ciara"]), 'output should be ["Hello, Ash!", "Hello, Beth!", "Hello, Ciara!"]');
+console.log(greeting(["Ash", "Beth", "Ciara"]), 'output should be ["Hello, Ash!", "Hello, Beth!", "Hello, Ciara!"]');
