@@ -1,11 +1,11 @@
 
 
-function greating(name){
+function greating(nameArray){
 
     let message = [];
 
     for(let nameIndex in nameArray){
-        message.push(`Hello ${nameArray[nameIndex]}`);
+        message.push(`Hello ${nameArray[nameIndex]}!`);
         
     }
     return message;
