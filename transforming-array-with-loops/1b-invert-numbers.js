@@ -1,7 +1,16 @@
 
-function invertNumbers(){
+function invertNumbers(numbersArray) {
 
-    return 0
+    result = [];
+    
+    for (let numberIndex in numbersArray) {
+
+        const convertedNumber = numbersArray[numberIndex] * -1;
+
+        result.push(convertedNumber);
+    }
+
+    return result
 }
 
 
