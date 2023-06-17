@@ -1,5 +1,18 @@
-function getNumberStringObjectArray() {
-    return 0;
+function getNumberStringObjectArray(numberArray) {
+
+    let result = [];
+
+    for (let numberIndex of numberArray){
+        const convertedObject = {};
+
+        convertedObject.asNumber = numberArray[numberIndex];
+        convertedObject.asString = numberArray[numberIndex].toString();
+
+        result.push(convertedObject);
+
+    }
+
+    return result;
 }
 
 
