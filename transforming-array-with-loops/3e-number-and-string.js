@@ -1,18 +1,14 @@
+function getConvertedObject(number) {
+    const convertedObject = {};
+    convertedObject.asNumber = number;
+    convertedObject.asString = number.toString();
+    return convertedObject;
+
+}
+
+
 function getNumberStringObjectArray(numberArray) {
-
-    let result = [];
-
-    for (let number of numberArray){
-        const convertedObject = {};
-
-        convertedObject.asNumber = number;
-        convertedObject.asString = number.toString();
-
-        result.push(convertedObject);
-
-    }
-
-    return result;
+    return numberArray.map(getConvertedObject);
 }
 
 
